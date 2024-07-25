@@ -1,0 +1,77 @@
+.media {   
+    cursor: pointer;
+    .flexItem {
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.dragBG{
+    @include media-breakpoint-down(sm) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    p{
+        font-size: 16px;
+    }
+}
+.title {
+    color: $white;
+    margin-bottom: 0rem;
+    @include media-breakpoint-down(sm) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+.mediaScroll{
+    height: 58vh;
+    overflow-y: scroll;
+    padding-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    @include media-breakpoint-down(xl) {
+        height: 56vh;
+    }
+    @include media-breakpoint-down(md) {
+        height: 54vh;
+    }
+    @include media-breakpoint-down(sm) {
+        height: 52vh;
+    }
+    .gridList {
+        .imageBG {
+            cursor: pointer;
+            padding: 15px 5px 15px;
+            border: 1px solid rgb(255 255 255 / 0.1);
+            border-radius: 8px;
+            @include media-breakpoint-down(xl) {
+                overflow-wrap: break-word;
+            }
+            .imgFlex {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+    
+                img {
+                    margin: 0 auto;
+    
+                }
+    
+                p {
+                    color: $white;
+                    font-size: 13px;
+                    text-align: center;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.crossIcon {
+    background-color: #4654e4;
+    color: $white;
+    padding: 10px 30px;
+    border-radius: 8px;
+}

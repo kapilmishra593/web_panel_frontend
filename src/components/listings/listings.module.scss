@@ -1,0 +1,114 @@
+.paperRoot {
+    border-bottom-left-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+}
+
+.respTable {
+    // overflow: hidden;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    max-height: 580px;
+
+    @include media-breakpoint-down(xxxl) {
+        max-height: 520px;
+    }
+
+    .table {
+        margin-bottom: 0rem;
+    }
+
+    .headings {
+        th {
+            color: $gray;
+            font-weight: 700;
+            border: none;
+            text-align: center;
+            font-size: 15px;
+            padding-bottom: 15px;
+            width: calc(100%/12);
+            display: table-cell;
+            &:first-child{
+                width: calc(100%/45);
+            }
+        }
+    }
+
+    .tbActive {
+        &:last-child {
+            td {
+                border-bottom: none;
+            }
+        }
+
+        td {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            border: none;
+            vertical-align: middle;
+            border-bottom: 10px solid transparent;
+            width: calc(100%/12);
+            display: table-cell;
+            &:first-child{
+                width: calc(100%/25);
+            }
+        }
+    }
+}
+
+.actionList {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    .fIcons {
+        background-color: $off_white;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .penBox {
+        margin-right: 10px;
+    }
+}
+
+.profile {
+    display: flex !important;
+    align-items: flex-start;
+    text-align: left !important;
+    justify-content: center;
+    @include media-breakpoint-down(xl) {
+        flex-direction: column;
+        img{
+            margin-bottom: 6px;
+        }
+    }
+    p {
+        margin-bottom: 0;
+        margin-left: 10px;
+        @include media-breakpoint-down(xl) {
+            margin-left: 0px;
+        }
+    }
+}
+
+.tag {
+    font-size: 13px;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    width: max-content;
+    margin-bottom: 0;
+
+    &.approved {
+        background-color: $off_green;
+        color: $text_color;
+        margin-right: 8px;
+    }
+
+    &.progress {
+        background-color: $pink_bg;
+        color: $pink;
+        margin-bottom: 0;
+    }
+}

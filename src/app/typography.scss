@@ -1,0 +1,24 @@
+.text-2 {
+    font-size: calc(40px + (48 - 40) * ((100vw - 320px) / (1920 - 320)));
+    line-height: 120%;
+    font-weight: 700;
+}
+
+.text-3 {
+    font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
+    line-height: 100%;
+    font-weight: 700;
+}
+
+.text-4 {
+    font-size: calc(18px + (26 - 18) * ((100vw - 320px) / (1920 - 320)));
+    line-height: 160%;
+    font-weight: 600;
+}
+
+.link-text {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}

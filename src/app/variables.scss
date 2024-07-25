@@ -1,0 +1,47 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+@import "bootstrap/scss/mixins/breakpoints";
+
+$theme-colors: (
+    primary:#1E4468
+);
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
+
+$grid-breakpoints: (
+    xs: 0,
+    xxs: 375,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+    xxxl: 1600px,
+    4xl: 1800px,
+);
+
+/* Theme colors */
+$white: #ffffff;
+$black: #131313;
+$orange: #FD6C01;
+$red: #EB0E28;
+$green: #29B34B;
+$bg_color: #020d05;
+$transition: all 0.3s ease-in-out;
+$light_blue: #6873a9;
+$pink: #a059f8;
+$grey: #454f85;
+$dark_blue: #161a4f;
+$purple: #181751;
+$off_blue: #1b2256;
+$arrow_bg: #191f49;
+$gray: #838e9b;
+$off_white: #e9ecf6;
+$off_green: #e0fbf6;
+$text_color: #58c2a9;
+$pink_bg: #ece7fe;
+$side_bg: #181d52;
+$box_shadow: #0003;
+$tag_color: #647283;

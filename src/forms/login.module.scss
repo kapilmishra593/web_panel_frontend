@@ -1,0 +1,33 @@
+.login_form{
+    margin-top: 2rem;
+    .field_group{
+        margin-bottom: 1.5rem;
+        position: relative;
+        .field_label{
+            position: absolute;
+            top: 7px;
+            left: 12px;
+        }
+        .form_input{
+            width: 100%;
+            height: 40px;
+            border-radius: 4px;
+            padding-left: 2.5rem;
+            background: rgba($color: #ffffff, $alpha: 0.1);
+            color: $white;
+            &:-webkit-autofill,
+            &:-webkit-autofill:focus {
+                transition: background-color 600000s 0s, color 600000s 0s;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+    .submit_btn{
+        width: 100%;
+        background-image: linear-gradient(150deg, #a158fa 50%, #2c266c 75%);
+        padding: 14px;
+        border-radius: 4px;
+    }
+}

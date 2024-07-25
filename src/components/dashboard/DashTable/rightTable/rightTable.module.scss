@@ -1,0 +1,72 @@
+.trans {  
+    .scrollList{
+        overflow-x: hidden;
+        height: 45vh;
+        padding-right: 10px;
+        .transLists{
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 0;
+            padding-left: 0;
+            padding-top: 5px;  
+            li{
+                display: flex;
+                align-items: flex-start;
+                width: 100%;
+                margin-bottom: 35px;
+                margin-top: 0;
+                color: $grey;
+                font-weight: 600;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                &.date {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $grey;
+                    text-align: center;
+                }
+            
+                &.price {
+                    color: $white;
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-align: end;
+                }
+                .tContent {
+                    padding-left: 15px;
+                    width: 100%;
+                    .cName {
+                        font-size: 15px;
+                        color: $white;
+                        font-weight: 500;
+                        margin-bottom: 0;
+                        padding-bottom: 5px;
+                    }
+        
+                    p {
+                        font-size: 12px;
+                        color: $grey;
+                        font-weight: 500;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .tPrice{ 
+                font-size: 14px;
+                font-weight: 600;
+                color: $white !important;
+                text-align: left;
+                margin-top: 1rem;
+                span{
+                    background-color: $dark_blue;
+                    padding: 10px;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+    &.rgTrans{
+        padding-top: 1rem;
+    }
+}

@@ -1,0 +1,73 @@
+.inner {
+    overflow-x: hidden;
+    // max-height: 520px;
+    padding-right: 1rem;
+    height: 65vh;
+    
+    @include media-breakpoint-down(xxxl) {
+        height: 63vh;
+    }
+
+    @include media-breakpoint-down(md) {
+        height: 55vh;
+    }
+
+    .card {
+        background-color: $off_blue;
+        border-radius: 20px;
+        padding: 20px;
+        margin-bottom: 15px;
+
+        .circleArrow {
+            color: $white;
+            background-color: $arrow_bg;
+            padding: 10px;
+            border-radius: 50px;
+        }
+
+        .imageFlex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: $white;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include media-breakpoint-down(xl){
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            @include media-breakpoint-down(md){
+                flex-direction: row;
+                align-items: flex-start;
+            }
+            p {
+                margin-bottom: 0;
+                color: $white;
+            }
+        }
+    }
+
+    .white_color {
+        color: $white;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .recent {
+        background-color: $off_blue;
+        border-radius: 20px;
+        padding: 20px 20px 15px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,65 @@
+.sideBar {
+    width: 70px;
+    transition: width .3s;
+    cursor: pointer;
+    background-color: $side_bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 35px 10px 35px 10px;
+    .layoutSidebar {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        overflow: hidden;
+        z-index: 6;
+        top: 0;
+        transition: .5s all;
+        .menuList{
+            overflow-x: hidden;
+            overflow-y: auto;
+            max-height: calc(100vh - 60px);
+        }
+        .topIcon{
+            padding-left: 20px;
+            .barIcons {
+                color: $white;
+                font-size: 20px;                    
+                padding-bottom: 30px;
+            }
+        }           
+
+        .layoutMenu {
+            list-style-type: none;
+            padding: 0 0 30px;
+            margin: 0;
+
+            .layoutMenuItem {
+                display: block;
+                cursor: pointer;
+
+                .layoutMenuLink {
+                    display: flex;
+                    padding: 15px 20px 15px;
+                    font-weight: 600;
+                    border: 0;
+                    font-size: 15px;
+                    text-decoration: none;
+                    color: $light_blue;
+                    align-items: center;
+                    // &:active, &:hover {
+                    //     color: $white;
+                    //     background-image: linear-gradient(150deg, #a158fa 50%, #2c266c 75%);
+                    // }
+
+                    .icons {
+                        margin-right: 15px;
+                        margin-top: -3px;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.form_wrapper{
+    color: $white;
+    .field_group{
+        display: flex;
+        flex-direction: column;
+        .input_field{
+            height: 30px;
+            margin-top: 8px;
+            border-radius: 4px;
+            color: $black;
+            padding: 0 1rem;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+}
